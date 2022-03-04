@@ -1,3 +1,13 @@
+# Foreword
+
+This repository is a mirror of the code of SymBA* 2 (64-bits)
+planner from IPC-2014.
+
+The original link is [here](https://fai.cs.uni-saarland.de/torralba/software.html)
+
+
+# SymBA*
+
 SymBA is built on top of the Fast Downward Planning System
 (http://www.fast-downward.org/), so it is made available under the GNU
 Public License (GPL).
