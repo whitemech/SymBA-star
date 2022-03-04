@@ -1,19 +1,19 @@
 #! /bin/bash
 
 cd preprocess
-make "$@" || exit 1
+make -j4 "$@" || exit 1
 cd ..
 
 cd search
 cd cudd-2.5.0/
-make
+make -j4
 cd obj
 make
 cd ../..
 
-make "$@" STATE_VAR_BYTES=1 || exit 1
-make "$@" STATE_VAR_BYTES=2 || exit 1
-make "$@" STATE_VAR_BYTES=4 || exit 1
+make -j4 "$@" STATE_VAR_BYTES=1 || exit 1
+make -j4 "$@" STATE_VAR_BYTES=2 || exit 1
+make -j4 "$@" STATE_VAR_BYTES=4 || exit 1
 cd ..
 
 if [ ! -e VAL ]; then
@@ -34,6 +34,6 @@ if [ $? != 0 ]; then
 fi
 
 cd VAL
-make "$@" || exit 1
+make -j4 "$@" || exit 1
 cp validate ../
 cd ..
