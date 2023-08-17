@@ -6,6 +6,7 @@
 #include "sym_util.h"
 #include "../timer.h"
 
+#include <limits>
 #include <sstream>
 #include <iostream>
 #include <fstream>

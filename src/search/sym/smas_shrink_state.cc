@@ -3,6 +3,8 @@
 #include "sym_util.h"
 #include "smas_abs_state.h"
 
+#include <limits>
+
 using namespace __gnu_cxx;
 using namespace std;
 

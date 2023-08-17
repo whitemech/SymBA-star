@@ -6,6 +6,7 @@
 #include "sym_smas.h" 
 
 #include "../timer.h"
+#include <limits>
 
 SymTransition::SymTransition(SymVariables * sVars, 
 			     const Operator * op, int cost_) : 

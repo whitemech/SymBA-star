@@ -7,7 +7,9 @@
 #include "sym_util.h"
 #include "../globals.h"
 #include "../timer.h"
-#include "test/sym_test_mutex.h" 
+#include "test/sym_test_mutex.h"
+
+#include <limits>
 
 using namespace std;
 

@@ -11,6 +11,7 @@
 #include "smas_shrink_state.h"
 #include "../debug.h"  
 
+#include <limits>
 #include <sstream>
 #include <ext/slist>
 
